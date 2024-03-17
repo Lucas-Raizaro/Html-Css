@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            width: 600px;
+            background-color: white;
+            padding: 3px;
+            margin: 10px;
+        }
+        header > h1 {
+            text-align: center;
+        }
+        nav{
+            background-color: lightgray;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        nav > a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: darkred;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: blueviolet;
+            font-weight: bolder;
+        }
+
+        main{
+            width: 600px;
+            background-color: white;
+            padding: 3px;
+            text-align: justify;
+            margin: 10px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            margin: 2px;
+        }
+        article > aside{
+            background-color: rgb(155, 155, 155);
+        }
+        article > h2 {
+            text-align: center;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            margin: auto;
+            padding: 5px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notíticia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos doloribus officiis explicabo, dolorum eaque minus excepturi labore sequi debitis sed? Inventore exercitationem unde reprehenderit nam eos ullam, quaerat explicabo a.</p>
+                <aside>
+                    <p>Artigo escrito por Lucas Madruga</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo curso em vídeo</p>
+    </footer>
+</body>
+</html>
