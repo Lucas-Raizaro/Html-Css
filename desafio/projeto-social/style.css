@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+  background-image: url('imagens/fundo-madeira.jpg');
+  position: relative;
+}
+
+iframe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 627px;
+  width: 311px;
+  background: url('imagens/tela-home.jpg');
+}
+section img{
+  height: 80px;
+}
