@@ -77,22 +77,24 @@ section{
   display: block;
   background-color: #7158AD;
   width: 490px;
-  height: 200px;
-  border-radius: 100px 100px 35px 35px;
+  height: 510px;
+  border-radius: 120px 35px 35px 120px;
   margin-top: -410px;
   margin-left: 540px;
 }
 
 .secao2 h1{
-  padding-top: 30px;
+  padding-top: 150px;
   color: white;
+  font-size: 2em;
 }
 
 #frase{
-  padding-top: 10px;
+  padding-top: 50px;
   padding-bottom: 10px;
+  margin: auto;
   color: white;
-  width: 300pxpx;
+  width: 420px;
 }
 
 #signup{
@@ -100,8 +102,8 @@ section{
   border: 2px solid white;
   text-align: center;
   width: 110px;
-  margin-top: 10px;
+  margin-top: 30px;
   padding: 4px;
   border-radius: 9px;
-  margin-left: 260px;
+  margin-left: 185px;
 }
