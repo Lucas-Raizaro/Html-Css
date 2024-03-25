@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        main{
+            background-image: linear-gradient(to right, orange, purple);
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: inset 1px 1px 8px black;
+        }
+
+        div p{
+            background-color: lightgray;
+            margin-top: 10px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        h1, p{
+            padding: 10px;
+            text-align: left;
+        }
+
+       .enviar{
+        padding: 5px;
+        border-radius: 7px;
+        text-align: center;
+        margin-left: 105px;
+        margin-right: 10px;
+        margin-top: 10px;
+        background-color: lightsalmon;
+        font-weight: bold;
+        border: 3px solid purple;
+       }
+
+       .limpar{
+        padding: 5px;
+        border-radius: 7px;
+        text-align: center;
+        background-color: lightsalmon;
+        font-weight: bold;
+        border: 3px solid purple;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Teste de formulario</h1>
+            <form action="cadastro.php" method="get" autocomplete="on">
+
+                <p>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome Completo">
+                </p>
+
+                <p>
+                    <label for="imedia">Média: </label>
+                    <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1" value="5">
+                </p>
+
+                <p>
+                    <label for="ihora">Horário da Prova: </label>
+                    <input type="time" name="hora" id="ihora">
+                </p>
+
+                <p>
+                    <label for="iperiodo">Periodo letivo: </label>
+                    <input type="month" name="mes" id="iperiodo" required>
+                </p>
+
+                <p>
+                    <label for="idia">Dia da prova: </label>
+                    <input type="date" name="dia" id="idia" required>
+                </p>
+                    <input class="enviar" type="submit" value="enviar">
+
+                    <input type="reset" value="Limpar" class="limpar">
+            </form>
+        </div>
+        <p>teste para ver o que o vs code esta me falando</p>
+    </main>
+</body>
+</html>
