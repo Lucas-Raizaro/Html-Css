@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario 002</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        main{
+            background-image: linear-gradient(to right, orange, purple);
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: inset 1px 1px 8px black;
+        }
+
+        div p{
+            background-color: lightgray;
+            margin-top: 10px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        h1, p{
+            padding: 10px;
+            text-align: center;
+        }
+
+       .enviar{
+        padding: 5px;
+        border-radius: 7px;
+        text-align: center;
+        margin-left: 105px;
+        margin-right: 10px;
+        margin-top: 10px;
+        background-color: lightsalmon;
+        font-weight: bold;
+        border: 3px solid purple;
+       }
+
+       .limpar{
+        padding: 5px;
+        border-radius: 7px;
+        text-align: center;
+        background-color: lightsalmon;
+        font-weight: bold;
+        border: 3px solid purple;
+       }
+        </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>testando formulario</h1>
+            <form action="cadastro.php" autocomplete="off" method="post">
+                <p><label for="inome">Nome: </label> <input type="text" name="nome" id="inome" size="20" required></p>
+
+                <p><label for="senha">Senha: </label> <input type="password" name="senha" id="senha"></p>
+
+                <input type="submit" value="Enviar" class="enviar">
+                <input type="reset" value="Limpar" class="limpar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
