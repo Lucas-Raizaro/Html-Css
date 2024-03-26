@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de idade</title>
+</head>
+<body>
+  <form action="cadastro.php" method="post">
+
+    <p>
+      <label for="ianoa">Ano Atual: </label>
+      <input type="number" name="anoatual" id="ianoa">
+    </p>
+
+    <p>
+      <label for="iano">Ano de Nascimento: </label>
+      <input type="number" name="ano" id="iano" min="1950" max="2010" oninput="nasc.innerHTML = Number(ianoa.value) - Number(iano.value)">
+
+      <br>
+
+      <label for="nasc">Sua idade: </label>
+      <output id="nasc">0</output>
+    </p>
+
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+</body>
+</html>
