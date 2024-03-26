@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+  <style>
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    body{
+      height: 100vh;
+      width: 100vw;
+      background-image: linear-gradient(to left, orange, purple);
+      position: relative;
+    }
+
+    div{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      background-color: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 5px 5px 15px black;
+    }
+
+    fieldset{
+      border: 2px solid black;
+    }
+
+    input{
+      border: 2px solid black;
+      padding: 2px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div>
+    <form action="cadastro.php" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+          <label for="nome">Nome: </label>
+          <input type="text" name="name" id="nomme" placeholder="Nome Completo" required autocomplete="name">
+          <br>
+          <br>
+          <label for="iemail">Email: </label>
+          <input type="email" id="iemail" required placeholder="Digite seu Email" autocomplete="email">
+          <br><br>
+          <label for="isenha">Password: </label>
+          <input type="password" name="senha" id="isenha" required placeholder="Digite sua Senha">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Sexo</legend>
+        <p>
+          <input type="radio" name="sexo" id="masc">
+          <label for="masc">Masculino</label>
+          <br>
+          <input type="radio" name="sexo" id="Fem">
+          <label for="Fem">Feminino</label>
+          <br>
+          <input type="radio" name="sexo" id="outro">
+          <label for="outro">Outro</label>
+        </p>
+    
+      </fieldset>
+      <fieldset>
+        <legend>Seção Esportes</legend>
+        <p>
+          <label for="iesfut">Futebol</label>
+          <input type="checkbox" name="esfut" id="iesfut">
+        </p>
+      </fieldset>
+      <p>
+        <label for="icor">Posicione sua cor</label>
+        <input type="color" name="cor" id="icor" value="#ffffff">
+      </p>
+      <p>
+        <label for="satisfação">Nível de Satisfação: </label>
+        <input type="range" name="satisfa" id="satisfação" min="1"  max="5">
+      </p>
+      <p>
+        <label for="Foto">Foto de Perfil: </label>
+        <input type="file" name="foto" id="Foto">
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset"  value="Limpar">
+      </p>
+  </div>
+
+
+
+  </form>
+</body>
+</html>
